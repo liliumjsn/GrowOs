@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 $background-color:  #47bbb3;
 $value-color:       #fff;
-$settxt-color:		#fff;
 $curvalue-color:		#fff;
 $setvalue-color: 	#fff;
 $title-color:       rgba(255, 255, 255, 0.7);
@@ -18,18 +17,20 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .title {
     color: $title-color;
+    margin: 0;
+    padding: 0;
   }
 
   .curvalue {
     color: $value-color;
-  }
-  
-  .settxt {
-    color: $value-color;
+    margin: 0;
+    padding: 0;
   }
   
   .setvalue {
     color: $value-color;
+    margin: 0;
+    padding: 0;
   }
 
   .updated-at {
