@@ -1,0 +1,1 @@
+class Dashing.Growosval extends Dashing.Widget
