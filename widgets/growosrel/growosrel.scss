@@ -15,14 +15,20 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .title {
     color: $title-color;
+    margin: 0;
+    padding: 0;
   }
 
   .curvalue {
     color: $curvalue-color;
+    margin: 0;
+    padding: 0;
   }
   
   .updated-at {
     color: rgba(0, 0, 0, 0.3);
   }
+  
+  
 
 }
