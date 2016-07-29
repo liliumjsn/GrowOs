@@ -1,9 +1,7 @@
 <script type='text/javascript'>
 $(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  // Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
   Dashing.widget_base_dimensions = [260, 240]
-  Dashing.numColumns = 5
+  Dashing.numColumns = 4
 });
 </script>
 
@@ -18,48 +16,22 @@ body {
 
 <div class="gridster">
   <ul>
-  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Image" data-image="/logo.png" style="background-color:#f26522;padding-left:30px;padding-right:30px"></div>
     </li>
   
     <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-view="Clock" style="background-color:#47bbb3;"></div>
-      <i class="fa fa-clock-o icon-background"></i>
+       <div data-id="tmp" data-view="Growosval" data-title="Temperature" style="background-color:#008000;"></div> 
     </li>
-
+    
     <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
-       <div data-id="ppm" data-view="Number" data-title="CO2 PPM" style="background-color:#008000;"></div> 
+       <div data-id="hum" data-view="Growosval" data-title="Humidity" style="background-color:#008000;"></div> 
     </li>
-	<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
-       <div data-id="temp" data-view="Number" data-title="Temperature" style="background-color:#008000;"></div> 
+    
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+       <div data-id="ppm" data-view="Growosval" data-title="CO2 PPM" style="background-color:#008000;"></div> 
     </li>
-	<li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
-       <div data-id="hum" data-view="Number" data-title="Humidity" style="background-color:#008000;"></div> 
-    </li>
-	<li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-view="Text" data-title="Diagram 1" style="background-color:#008000;"></div> 
-    </li>
-	
-<li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="klimato" data-view="Klimato"></div>
-    </li>
-<li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
-      <div data-view="Text" data-title="Diagram 2" style="background-color:#008000;"></div> 
-    </li>
-<li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Text" data-title="Ligths" style="background-color:#008000;"></div> 
-    </li>
-	<li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-view="Text" data-title="Fan" style="background-color:#008000;"></div> 
-    </li>
-	<li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-view="Text" data-title="Fan Level" style="background-color:#008000;"></div> 
-    </li>
-	<li data-row="3" data-col="4" data-sizex="1" data-sizey="1">
-      <div data-view="Text" data-title="Dehumidifier" style="background-color:#008000;"></div> 
-    </li>
-	<li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
-      <div data-view="Text" data-title="CO2 Valve" style="background-color:#008000;"></div> 
-    </li>
+    
+    
   </ul>
 </div>
